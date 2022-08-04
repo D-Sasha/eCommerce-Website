@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Orders</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+String id = prompt("Enter user id");
+
+String sql = "SELECT orderId.ordersummary, orderDate.ordersummary, totalAmount.ordersummary, productId.orderproduct FROM ordersummary JOIN orderproduct ON orderId.ordersummary = orderId.orderproduct WHERE customerId.ordersummary = ?";
+
+PreparedStatement stmt = con.PrepareStatement(sql);
+stmt.setString(1, id);
+ResultSet rst = stmt.executeQuery();
+
+while(rst.next()){
+    out.print(rst.getInt("orderId.ordersummary") + " " + rst.getDate("orderDate.ordersummary") + " "+ rst.getDouble("totalAmount.ordersummary") + " "+ rst.getInt("productId.orderproduct") );
+}
+</body>
+</html>

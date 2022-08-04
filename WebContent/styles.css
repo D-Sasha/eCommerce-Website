@@ -1,0 +1,132 @@
+body {
+    --bar-color:rgb(35, 35, 35);
+    --bg1-color:rgb(11, 12, 16);
+    --bg2-color:rgb(31, 40, 51);
+    --txt-color:rgb(255, 255, 255);
+    --hr-color:rgb(197, 198, 199);
+    --lk-color:rgb(0, 148, 128);
+    --lk2-color:rgb(69, 162, 158);
+    background-image: linear-gradient(var(--bg1-color), var(--bg2-color));
+    margin: 0;
+    color: var(--txt-color);
+    padding-top: 10vh;
+}
+
+h1 {
+    color: var(--hr-color);
+    margin: 0px;
+    padding-left:20px;
+    padding-right:20px;
+    font-family: cursive;
+}
+
+h2 {
+    margin: 0px;
+    margin-top: 15px;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+h3 {
+    margin: 0px;
+    margin-top: 10px;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+p {
+    color: var(--txt-color);
+}
+
+a {
+    border-bottom: 0px;
+    color: var(--hr-color);
+    text-decoration: none;
+    padding:5px;
+    border-radius: 10px;
+}
+
+img{
+    border-radius: 20px;
+    max-width: 500px;
+}
+
+input {
+    border: 2px solid var(--lk2-color);
+    border-radius: 5px;
+}
+
+input:focus {
+    border: 2px solid var(--lk-color);
+    box-shadow: 0 0 10px var(--lk-color);
+}
+
+a:hover {
+    border-bottom: 0px;
+    color: var(--lk2-color);
+    text-decoration: none;
+}
+
+.topBar{
+    background-image: linear-gradient(var(--bar-color), var(--bg1-color));
+    width:100vw;
+    height:110px;
+    display:flex;
+    justify-content: space-between;
+    position:fixed !important;
+    position: absolute;
+    top: 0;
+    box-shadow: 0 0 5px var(--lk-color);
+}
+
+.spacer{
+    width:600px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.content{
+    padding-top:5vh;
+    overflow: auto;
+    height:85vh;
+}
+
+/*Table stuff*/
+table {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 10px var(--lk-color);
+}
+
+tr {
+    background-color: var(--bg1-color), 0;
+    color: var(--lk2-color);
+    text-align: left;
+}
+
+th, td {
+    padding: 12px 15px;
+    border-color: var(--lk-color);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--bar-color), 0;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--lk2-color);
+    border-radius: 10px;
+}
