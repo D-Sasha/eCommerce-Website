@@ -44,9 +44,23 @@ Admin Portal
 
 Here are a few screenshots of the website:
 
+Home Page
 ![Home Page](images/homepage.png)
+
+Login
 ![Login](images/login.png)
+
+Make an Account
 ![Make Account](images/makeacc.png)
+
+Product Page
 ![Product Page](images/prodpage.png)
+
+Product Detail Page
 ![Product Detail Page](images/specprodpage.png)
+
+Cart
 ![Cart](images/cartpage.png)
+
+[Video walkthrough of the website](https://youtu.be/4kr8tzlHhto)
+
